@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+font-family: "IBM Plex Sans", sans-serif;
+box-sizing: border-box;
+text-decoration: none;
+}
+
+* {
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
+body {
+height: 100vh;
+background-color: #1a1a1a;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.profile-card {
+width: 400px;
+text-align: center;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.card-header {
+background: #333333;
+padding: 60px 40px;
+}
+
+@keyframes animated-gradient{
+25%{
+background-position: left bottom;
+}
+50%{
+background-position: right bottom;
+}
+75%{
+background-position: right top;
+}
+100%{
+background-position: left top;
+}
+}
+
+.pic {
+animation: animated-gradient 2s linear infinite;
+display: inline-block;
+padding: 10px;
+background: linear-gradient(130deg, #EAB75B, #5F5E4A);
+margin: auto;
+border-radius: 50%;
+background-size: 200% 200%;
+}
+
+.pic img {
+display: block;
+width: 150px;
+height: 150px;
+border-radius: 50%;
+}
+
+.name {
+color: #bcdb54;
+font-size: 28px;
+font-weight: 600;
+margin: 20px 0;
+}
+
+@keyframes neonPulse {
+0% {
+text-shadow:
+0 0 2px #bcdb54,
+0 0 4px #bcdb54;
+}
+
+100% {
+text-shadow:
+0 0 2px #333333,
+0 0 4px #333333;
+}
+}
+
+.desc {
+animation: neonPulse 1.5s ease-in-out infinite alternate;
+color: #ffffff;
+font-size: 18px;
+font-weight: 500;
+margin: 20px 0;
+}
+
+.sm {
+display: flex;
+justify-content: center;
+margin: 30px 0;
+}
+
+.sm a {
+color: #bcdb54;
+font-size: 22px;
+width: 56px;
+transition: .3s linear;
+}
+
+.sm a:hover {
+color: #d9d9d9;
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+margin-top: 20px;
+}
+
+.dropdown-toggle {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+
+border: 3px solid #ffffff;
+border-radius: 10px;
+padding: 10px 16px;
+cursor: pointer;
+
+background-color: transparent;
+color: #ffffff;
+font-size: 16px;
+font-weight: 600;
+transition: 0.3s ease;
+
+pointer-events: auto;
+}
+
+.dropdown-toggle:hover {
+background-color: #ffffff;
+color: #333333;
+}
+
+.left-icon {
+font-size: 16px;
+}
+
+.right-icon {
+font-size: 14px;
+}
+
+.dropdown-menu {
+display: none;
+position: absolute;
+background-color: #262626;
+min-width: 220px;
+border-radius: 8px;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+padding: 10px 0;
+margin-top: 10px;
+z-index: 1;
+max-height: 200px;
+overflow-y: auto;
+scrollbar-width: thin;
+scrollbar-color: #ffffff #100000;
+bottom: 100%;
+margin-bottom: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar {
+width: 6px;
+}
+
+.dropdown-menu::-webkit-scrollbar-track {
+background: #333333;
+border-radius: 10px;
+}
+
+.dropdown-menu::-webkit-scrollbar-thumb {
+background-color: #d9d9d9;
+border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.dropdown-menu a {
+display: flex;
+align-items: center;
+gap: 10px;
+color: #ffffff;
+padding: 10px 16px;
+text-decoration: none;
+transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+background-color: #333333;
+color: #d9d9d9;
+}
+
+.dropdown-menu i {
+font-size: 18px;
+}
