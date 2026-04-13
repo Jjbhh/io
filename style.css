@@ -68,7 +68,7 @@ border-radius: 50%;
 }
 
 .name {
-color: #bcdb54;
+color: #EAB75B;
 font-size: 28px;
 font-weight: 600;
 margin: 20px 0;
@@ -77,8 +77,8 @@ margin: 20px 0;
 @keyframes neonPulse {
 0% {
 text-shadow:
-0 0 2px #bcdb54,
-0 0 4px #bcdb54;
+0 0 2px #EAB75B,
+0 0 4px #EAB75B;
 }
 
 100% {
@@ -103,7 +103,7 @@ margin: 30px 0;
 }
 
 .sm a {
-color: #bcdb54;
+color: #EAB75B;
 font-size: 22px;
 width: 56px;
 transition: .3s linear;
